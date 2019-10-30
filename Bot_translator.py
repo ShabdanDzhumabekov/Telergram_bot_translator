@@ -16,7 +16,7 @@ bot = telebot.TeleBot(Token)
 @bot.message_handler(commands=['start'])
 
 def start_message(message):
-    bot.send_message(message.chat.id, 'Здравствуйте, я,переводчик. Перевожу с английского на татарский и наоборот. Если вы напишите на других языках, то буду переводить на кыргызский язык'))
+    bot.send_message(message.chat.id, 'Здравствуйте, я,переводчик. Перевожу с английского на татарский и наоборот. Если вы напишите на других языках, то буду переводить на кыргызский язык')
 
 @bot.message_handler(content_types=['text'])
 def send_text(message):
