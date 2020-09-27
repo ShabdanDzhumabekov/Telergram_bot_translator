@@ -10,7 +10,7 @@ def get_translation(text,lang):
     r = requests.post(URL,data={'key':KEY,'text':TEXT,'lang':LANG})
     return eval(r.text)
 
-Token = '1015658880:AAHtyOl1ch2H8Wd6Ck8oEMMcTVRFU9UycCs'
+Token = ''
 bot = telebot.TeleBot(Token)
 
 @bot.message_handler(commands=['start'])
